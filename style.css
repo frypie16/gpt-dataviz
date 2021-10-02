@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20%;
+  font-size: 100px;
+  color: black;
+  line-height: 0%;
+  padding-bottom: 500px;
+  font-family: ubuntu, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+video {
+  padding-left: 7px;
+  padding-top: 10px;
+}
+
+img {
+  transition: transform 0.7s ease-in-out;
+  /* animation-duration: 5s; */
+  /* animation-name: fade; */
+  animation: fade 5s normal forwards;
+  animation-delay: 10s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+img:hover {
+  transform: rotate(360deg);
+}
+
+#text {
+  font-size: 35pt;
+  font-family: GlyphWorld;
+  line-height: 30px;
+  color: black;
+
+  direction: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  margin-top: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18em;
+  font-size: 38pt;
+  display: fixed;
+  text-align: center;
+}
+
+.clear {
+  display: inline-block;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.shuffle {
+  display: inline-block;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#canvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+::selection {
+  background: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .title {
+    font-size: 28pt;
+    width: 400px;
+    text-align: center;
+  }
+
+  .clear {
+    font-size: 25px;
+  }
+
+  .shuffle {
+    font-size: 25px;
+  }
+}
